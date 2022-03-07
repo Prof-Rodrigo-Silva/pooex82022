@@ -53,7 +53,7 @@ public class Disciplina {
 		return "Disciplina [nomeDisciplina=" + nomeDisciplina + ", notas=" + Arrays.toString(notas) + "]";
 	}
 	
-	public double GetMediaNotas() {
+	public double getMediaNotas() {
 		double somaNotas = 0;
 		for (int i = 0; i < notas.length;i++) {
 			somaNotas += notas[i];

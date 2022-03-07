@@ -84,16 +84,16 @@ public class Aluno extends Pessoa{
 				+ serieMatriculado + ", disciplinas=" + disciplinas + "]";
 	}
 	
-	public double CalculaMediaGeral() {
+	public double calculaMediaGeral() {
 		double somaNotas = 0;
 		for (Disciplina disciplina : disciplinas) {
-			somaNotas += disciplina.GetMediaNotas();
+			somaNotas += disciplina.getMediaNotas();
 		}
 		return somaNotas / disciplinas.size();
 	}
 	
-	public boolean CalculaMediaGeral1() {
-		double media = this.CalculaMediaGeral();
+	public boolean calculaMediaGeral1() {
+		double media = this.calculaMediaGeral();
 		if(media >= 7) {
 			return true;
 		}else {

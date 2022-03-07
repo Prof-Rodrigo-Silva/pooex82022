@@ -54,8 +54,8 @@ public class ClasseExecutavel {
 			System.out.println("Data de matricula do aluno: "+aluno.getDataMatricula());
 			System.out.println("Nome da escola: "+aluno.getNomeEscola());
 			System.out.println("Série do aluno: "+aluno.getSerieMatriculado());
-			System.out.println("Média Geral: "+aluno.CalculaMediaGeral());
-			if(aluno.CalculaMediaGeral1()) {
+			System.out.println("Média Geral: "+aluno.calculaMediaGeral());
+			if(aluno.calculaMediaGeral1()) {
 				System.out.println("Aluno Aprovado!");
 			}else {
 				System.out.println("Aluno Reprovado!");
@@ -63,7 +63,7 @@ public class ClasseExecutavel {
 			System.out.println("------------LISTA DE DISCIPLINAS------------");
 			for(Disciplina disciplina : aluno.getDisciplinas()) {
 				System.out.println("Disciplina: "+disciplina.getNomeDisciplina());
-				System.out.println("Média da disciplina: "+disciplina.GetMediaNotas());
+				System.out.println("Média da disciplina: "+disciplina.getMediaNotas());
 				for(int y = 0; y < disciplina.getNotas().length; y++) {
 					System.out.println((y+1)+"º Nota: "+disciplina.getNotas()[y]);
 					}
