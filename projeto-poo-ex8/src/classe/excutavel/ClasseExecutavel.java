@@ -15,6 +15,7 @@ public class ClasseExecutavel {
 
 		List<Aluno> alunos = new ArrayList<Aluno>();
 		
+		
 		int nroAluno = Integer.parseInt(JOptionPane.showInputDialog("Qual o nro de alunos?"));
 		int nroDisciplinas = Integer.parseInt(JOptionPane.showInputDialog("Qual o nro de disciplinas por aluno?"));
 		
@@ -43,6 +44,7 @@ public class ClasseExecutavel {
 					
 				aluno.getDisciplinas().add(disciplina);
 			}
+						
 			alunos.add(aluno);
 		}
 		System.out.println("------------LISTA DE ALUNOS------------");
